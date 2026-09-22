@@ -11,6 +11,10 @@ body{
     display: flex;
     justify-content: space-between ;
     border-bottom: solid black 1px;
+     background-color: rgba(244, 238, 248, 0.892);
+     position: sticky;
+     top: 0;
+     z-index: 1;
 }
 .navbar_sec1_title{
    color: #a435f0;
@@ -27,6 +31,7 @@ body{
     border: none;
     width:100%;
     font-size: 16px;
+     background-color: transparent;
 
 }
 .navbar_1 p,.navbar_2 p,.navbar_3 p,.navbar_4 p{
@@ -38,6 +43,22 @@ body{
 .navbar_sec4,.navbar_sec5{
     display: flex;
     padding: 10px;
+}
+.popup{
+    position: relative;
+    cursor: pointer;
+}
+.popup:hover .pop_up{
+    display: block;
+}
+.pop_up{
+    position: absolute;
+    width: 50px;
+    border: solid black 1px;
+    background-color: white;
+    padding: 10px;
+    right: -15px;
+    display: none ;
 }
 .fa-sharp{
     padding: 10px;
@@ -69,6 +90,24 @@ body{
 }
 .main_img{
     width: 100%;
+    position: relative;
+}
+.inside_main_img{
+    width: 30%;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    top: 75px;
+    left: 50px;
+
+}
+.main_img_btn{
+    color: white;
+    background-color:#a435f0 ;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
 .course_card1{
     padding: 10px;
