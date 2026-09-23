@@ -87,7 +87,17 @@ body{
     color: white;
     border-radius: 30px;
     padding: 10px;
+    border:solid #a435f0 1px;
+    cursor: pointer;
+
 }
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: #a435f0;
+    border: solid #a435f0 1px;
+}
+
 .main_img{
     width: 100%;
     position: relative;
@@ -99,7 +109,20 @@ body{
     padding: 20px;
     top: 75px;
     left: 50px;
+    animation-name: zoom;   
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{transform: scale(0);
+        opacity: 0;
 
+    }
+    100%{transform: scale(1);
+        opacity: 1;
+
+    }
 }
 .main_img_btn{
     color: white;
