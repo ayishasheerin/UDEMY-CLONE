@@ -44,6 +44,10 @@ body{
     display: flex;
     padding: 10px;
 }
+.nav_sec_0{
+    margin-top: 10px;
+    display: none;
+}
 .popup{
     position: relative;
     cursor: pointer;
@@ -76,6 +80,10 @@ body{
     border: solid #a435f0 2px;
     background-color: #a435f0;
 }
+.nav_sec6{
+    display: flex;
+    gap: 10px;
+}
 .categories{
     display: flex;
     padding: 10px;
@@ -101,18 +109,23 @@ body{
 .main_img{
     width: 100%;
     position: relative;
+    height: auto;
 }
 .inside_main_img{
-    width: 30%;
     position: absolute;
     background-color: white;
-    padding: 20px;
-    top: 75px;
-    left: 50px;
+    padding: 2%;
+    top: 8%;
+    left: 6%;
     animation-name: zoom;   
     animation-duration: 2s;
     opacity: 0;
     animation-fill-mode: forwards;
+    width: 40%;
+    box-sizing: border-box;
+    max-width: 500px;
+    height: auto;
+
 }
 @keyframes zoom{
     0%{transform: scale(0);
@@ -131,6 +144,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     border: none;
+    
 }
 .course_card1{
     padding: 10px;
@@ -313,6 +327,11 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.course_card1,.course_card2,.course_card3,.course_card4,.pp_course_card1,.pp_course_card2,.pp_course_card3,.pp_course_card4,.pp_course_card5,.pp_course_card6,.pp_course_card7,.pp_course_card8{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .skills_1{
     display: flex;
@@ -694,4 +713,66 @@ body{
 .foot{
     padding-left: 20px;
     padding-top: 5px;
+}
+@media screen and (max-width:900px) {
+    body{
+        font-size: 10px;
+    }
+    .inside_main_img{
+            left: 3%;
+            width: 45%;
+            padding:5px;
+            margin: 10px;
+    .inside_main_img h1{
+            font-size: 12px;
+        }
+        .main_img_btn{
+            padding: 5px;
+            font-size: 8px;
+        }
+}
+@media screen and (max-width:600px) {
+    .course_card1,.course_card2,.course_card3,.course_card4,.pp_course_card1,.pp_course_card2,.pp_course_card3,.pp_course_card4,.pp_course_card5,.pp_course_card6,.pp_course_card7,.pp_course_card8{
+        flex-basis: 40%;}
+        .inside_main_img{
+            left: 3%;
+            width: 45%;
+            padding:5px;
+            margin: 10px;
+           
+        }
+        .inside_main_img h1{
+            font-size: 12px;
+        }
+        .main_img_btn{
+            padding: 5px;
+            font-size: 8px;
+        }
+    
+        .categories p{
+            display: none;
+        }
+        .navbar_1,.navbar_2,.navbar_3,.navbar_sec2,.navbar_4,.sec_button_1,.sec_button_2{
+            display: none;
+        }
+        .navbar{
+            position: relative;
+        }
+        .navbar_sec1{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .nav_sec6{
+            margin-left:auto;
+            display: flex;
+            gap:10px
+        }
+        .nav_sec_0{
+            display: inline-block;
+            font-weight: bolder ;
+        }
+
+    }
+    
 }
